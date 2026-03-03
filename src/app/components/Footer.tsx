@@ -7,11 +7,9 @@ export function Footer() {
   const translations = {
     en: {
       builtWith: "Built with React and Tailwind CSS.",
-      designedWith: "Designed & Developed with passion",
     },
     no: {
       builtWith: "Bygget med React og Tailwind CSS.",
-      designedWith: "Designet & Utviklet med lidenskap",
     },
   };
 
@@ -24,7 +22,6 @@ export function Footer() {
           © {currentYear} Viktoria Brodshaug Langaas. {t.builtWith}
         </p>
         <p className="text-gray-500 dark:text-gray-600 text-sm mt-2">
-          {t.designedWith}
         </p>
       </div>
     </footer>

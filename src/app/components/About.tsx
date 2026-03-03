@@ -8,7 +8,7 @@ export function About() {
   const translations = {
     en: {
       title: "About Me",
-      paragraph1: "I'm a recent graduate with a Bachelor's degree in Web Development, bringing three years of dedicated learning and hands-on project experience. Throughout my studies, I've developed a strong foundation in both frontend and backend technologies.",
+      paragraph1: "I'm a soon to be graduate with a Bachelor's degree in Web Development, bringing three years of dedicated learning and hands-on project experience. Throughout my studies, I've developed a strong foundation in both frontend and backend technologies.",
       paragraph2: "My journey in web development has been driven by curiosity and a genuine love for creating things that make a difference. From building responsive interfaces to architecting full-stack applications, I've explored various aspects of modern web development.",
       paragraph3: "I'm now looking to bring my skills, enthusiasm, and fresh perspective to a dynamic team where I can continue to grow and contribute to meaningful projects.",
       highlights: [
@@ -28,7 +28,7 @@ export function About() {
     },
     no: {
       title: "Om Meg",
-      paragraph1: "Jeg er nyutdannet med en bachelorgrad i webutvikling, med tre år dedikert læring og praktisk prosjekterfaring. Gjennom studiene har jeg utviklet et solid fundament innen både frontend- og backend-teknologier.",
+      paragraph1: "Jeg er snart nyutdannet med en bachelorgrad i webutvikling, med tre år dedikert læring og praktisk prosjekterfaring. Gjennom studiene har jeg utviklet et solid fundament innen både frontend- og backend-teknologier.",
       paragraph2: "Min reise innen webutvikling har vært drevet av nysgjerrighet og en genuin kjærlighet for å skape ting som gjør en forskjell. Fra å bygge responsive grensesnitt til å arkitektere full-stack applikasjoner, har jeg utforsket ulike aspekter av moderne webutvikling.",
       paragraph3: "Jeg ser nå etter å bringe mine ferdigheter, entusiasme og friske perspektiv til et dynamisk team hvor jeg kan fortsette å vokse og bidra til meningsfulle prosjekter.",
       highlights: [

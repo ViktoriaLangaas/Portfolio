@@ -4,6 +4,12 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { useLanguage } from "./LanguageContext";
 
+// local project images
+import comparaImg from "../img/compara.png";
+import adopsjonImg from "../img/adopsjon.png";
+import turningTide from "../img/turningtide.png";
+import employeeDir from "../img/employee.png";
+
 export function Projects() {
   const { language } = useLanguage();
 
@@ -17,7 +23,7 @@ export function Projects() {
       projects: [
         {
           title: "Adopsjonsplattform",
-          description: "Bachelor thesis project: A comprehensive adoption platform currently under development. Full-stack application designed to connect adoptive families with children in need of homes.",
+          description: "Bachelor thesis project: A comprehensive adoption platform currently under development. Full-stack application designed to connect adoptive families with animals in need of homes. To find the fitting home for the animal",
           course: "IDG3920: Bachelor Thesis",
           status: "Under Development",
         },
@@ -47,7 +53,7 @@ export function Projects() {
       projects: [
         {
           title: "Adopsjonsplattform",
-          description: "Bacheloroppgave: En omfattende adopsjonsplattform under utvikling. Full-stack applikasjon designet for å knytte adoptivfamilier sammen med barn som trenger hjem.",
+          description: "Bacheloroppgave: En omfattende adopsjonsplattform under utvikling. Full-stack applikasjon designet for å knytte adoptivfamilier sammen med dyr som trenger hjem. Her skal dyret finne det riktige hjemmet som passer dets behov.",
           course: "IDG3920: Bacheloroppgave",
           status: "Under utvikling",
         },
@@ -74,28 +80,28 @@ export function Projects() {
 
   const projectData = [
     {
-      image: "https://images.unsplash.com/photo-1760548425425-e42e77fa38f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGluZ3xlbnwxfHx8fDE3NzIwODU2Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: adopsjonImg,
       technologies: ["React", "Node.js", "PostgreSQL", "TypeScript"],
       year: "2026",
       github: null,
       demo: null,
     },
     {
-      image: "https://images.unsplash.com/photo-1661246627162-feb0269e0c07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRlc2lnbiUyMGludGVyZmFjZXxlbnwxfHx8fDE3NzIxNTE0NTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: comparaImg,
       technologies: ["JavaScript", "HTML", "CSS", "UI/UX"],
       year: "2025",
       github: "https://github.com/isakeghv/comparative_tool_prototype",
       demo: null,
     },
     {
-      image: "https://images.unsplash.com/photo-1762341119237-98df67c9c3c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudCUyMHNjcmVlbnxlbnwxfHx8fDE3NzIxNjIzMjh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: turningTide,
       technologies: ["HTML", "CSS", "JavaScript", "Scroll Animations"],
       year: "2024",
-      github: null,
+      github: "https://github.com/AdvancedCSS2024/idg1292-2024-oblig3-group14",
       demo: "https://advancedcss2024.github.io/idg1292-2024-oblig3-group14/",
     },
     {
-      image: "https://images.unsplash.com/photo-1760536928911-40831dacdbc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBkZXNrfGVufDF8fHx8MTc3MjEyNzY0MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: employeeDir,
       technologies: ["Node.js", "Express", "MongoDB", "REST API"],
       year: "2024",
       github: null,
