@@ -14,6 +14,9 @@ export function Contact() {
     message: "",
   });
 
+  // track submission status so we can show a thank-you or error message
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
   const translations = {
     en: {
       title: "Get In Touch",
@@ -57,11 +60,24 @@ export function Contact() {
 
   const t = translations[language];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock form submission
-    alert(t.successMessage);
-    setFormData({ name: "", email: "", message: "" });
+    setStatus("sending");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error("network");
+      setStatus("sent");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (err) {
+      console.error(err);
+      setStatus("error");
+    }
   };
 
   const contactInfo = [
@@ -183,10 +199,22 @@ export function Contact() {
                   rows={6}
                 />
               </div>
-              <Button type="submit" size="lg" className="w-full">
+              <Button type="submit" size="lg" className="w-full" disabled={status === "sending"}>
                 {t.submit}
               </Button>
             </form>
+
+            {/* feedback message */}
+            {status === "sent" && (
+              <p className="mt-4 text-green-600 dark:text-green-400">
+                {t.successMessage}
+              </p>
+            )}
+            {status === "error" && (
+              <p className="mt-4 text-red-600 dark:text-red-400">
+                Something went wrong. Please try again later.
+              </p>
+            )}
           </div>
         </div>
       </div>
