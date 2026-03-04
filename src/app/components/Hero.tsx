@@ -55,7 +55,7 @@ export function Hero() {
           <Button
             onClick={() => scrollToSection("projects")}
             size="lg"
-            className="gap-2"
+            className="gap-2 cursor-pointer"
           >
             {t.viewWork}
           </Button>
@@ -63,7 +63,7 @@ export function Hero() {
             onClick={() => scrollToSection("contact")}
             variant="outline"
             size="lg"
-            className="gap-2"
+            className="gap-2 cursor-pointer"
           >
             {t.getInTouch}
           </Button>
@@ -71,7 +71,7 @@ export function Hero() {
 
         <div className="flex gap-6 justify-center text-gray-600 dark:text-gray-400">
           <a
-            href="https://github.com"
+            href="https://github.com/ViktoriaLangaas"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
