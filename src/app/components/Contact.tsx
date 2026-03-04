@@ -3,16 +3,12 @@ import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { useLanguage } from "./LanguageContext";
 
 export function Contact() {
   const { language } = useLanguage();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [state, handleSubmit] = useForm("xzdalqjo");
 
   const translations = {
     en: {
@@ -56,6 +52,18 @@ export function Contact() {
   };
 
   const t = translations[language];
+
+  if (state.succeeded) {
+    return (
+      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-950">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl sm:text-5xl mb-4 text-gray-900 dark:text-white">
+            {t.successMessage}
+          </h2>
+        </div>
+      </section>
+    );
+  }
 
 
   const contactInfo = [
@@ -117,7 +125,7 @@ export function Contact() {
 
             <div className="flex gap-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/ViktoriaLangaas" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-900 dark:bg-gray-700 text-white p-3 rounded-full hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors cursor-pointer"
@@ -137,11 +145,7 @@ export function Contact() {
 
           <div>
             <h3 className="text-2xl mb-6 text-gray-900 dark:text-white">{t.sendMessage}</h3>
-            <form
-              action="https://formspree.io/f/xzdalqjo"
-              method="POST"
-              className="space-y-4"
-            >
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm mb-2 text-gray-700 dark:text-gray-300">
                   {t.name}
@@ -150,8 +154,6 @@ export function Contact() {
                   id="name"
                   type="text"
                   name="name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
                   placeholder={t.namePlaceholder}
                 />
@@ -164,11 +166,10 @@ export function Contact() {
                   id="email"
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
                   placeholder={t.emailPlaceholder}
                 />
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm mb-2 text-gray-700 dark:text-gray-300">
@@ -177,14 +178,13 @@ export function Contact() {
                 <Textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   placeholder={t.messagePlaceholder}
                   rows={6}
                 />
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
-              <Button type="submit" size="lg" className="w-full">
+              <Button type="submit" size="lg" className="w-full" disabled={state.submitting}>
                 {t.submit}
               </Button>
             </form>
