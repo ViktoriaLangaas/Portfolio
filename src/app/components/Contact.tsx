@@ -26,7 +26,7 @@ export function Contact() {
       message: "Message",
       messagePlaceholder: "Your message...",
       submit: "Send Message",
-      successMessage: "Thank you for your message! I'll get back to you soon.",
+      successMessage: "Thank you for your message! 💙",
       labels: {
         email: "Email",
         phone: "Phone",
@@ -45,7 +45,7 @@ export function Contact() {
       message: "Melding",
       messagePlaceholder: "Din melding...",
       submit: "Send Melding",
-      successMessage: "Takk for meldingen! Jeg kommer tilbake til deg snart.",
+      successMessage: "Takk for meldingen! 💙",
       labels: {
         email: "E-post",
         phone: "Telefon",
@@ -147,7 +147,7 @@ export function Contact() {
           <div>
             <h3 className="text-2xl mb-6 text-gray-900 dark:text-white">{t.sendMessage}</h3>
             {showThanks ? (
-              <p className="text-center text-green-600 text-lg">
+              <p className="text-center text-blue-600 text-lg">
                 {t.successMessage}
               </p>
             ) : (
