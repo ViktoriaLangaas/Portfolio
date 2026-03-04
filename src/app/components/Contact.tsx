@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from "react";
 import { Mail, MapPin, Phone, Github, Linkedin } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
@@ -9,6 +10,8 @@ import { useLanguage } from "./LanguageContext";
 export function Contact() {
   const { language } = useLanguage();
   const [state, handleSubmit] = useForm("xzdalqjo");
+  const [showThanks, setShowThanks] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const translations = {
     en: {
@@ -53,17 +56,15 @@ export function Contact() {
 
   const t = translations[language];
 
-  if (state.succeeded) {
-    return (
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-950">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl sm:text-5xl mb-4 text-gray-900 dark:text-white">
-            {t.successMessage}
-          </h2>
-        </div>
-      </section>
-    );
-  }
+  // display thank-you message briefly when submission succeeds
+  useEffect(() => {
+    if (state.succeeded) {
+      setShowThanks(true);
+      formRef.current?.reset();
+      const timer = setTimeout(() => setShowThanks(false), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [state.succeeded]);
 
 
   const contactInfo = [
@@ -145,49 +146,55 @@ export function Contact() {
 
           <div>
             <h3 className="text-2xl mb-6 text-gray-900 dark:text-white">{t.sendMessage}</h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm mb-2 text-gray-700 dark:text-gray-300">
-                  {t.name}
-                </label>
-                <Input
-                  id="name"
-                  type="text"
-                  name="name"
-                  required
-                  placeholder={t.namePlaceholder}
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm mb-2 text-gray-700 dark:text-gray-300">
-                  {t.email}
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  name="email"
-                  required
-                  placeholder={t.emailPlaceholder}
-                />
-                <ValidationError prefix="Email" field="email" errors={state.errors} />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm mb-2 text-gray-700 dark:text-gray-300">
-                  {t.message}
-                </label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  required
-                  placeholder={t.messagePlaceholder}
-                  rows={6}
-                />
-                <ValidationError prefix="Message" field="message" errors={state.errors} />
-              </div>
-              <Button type="submit" size="lg" className="w-full" disabled={state.submitting}>
-                {t.submit}
-              </Button>
-            </form>
+            {showThanks ? (
+              <p className="text-center text-green-600 text-lg">
+                {t.successMessage}
+              </p>
+            ) : (
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm mb-2 text-gray-700 dark:text-gray-300">
+                    {t.name}
+                  </label>
+                  <Input
+                    id="name"
+                    type="text"
+                    name="name"
+                    required
+                    placeholder={t.namePlaceholder}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm mb-2 text-gray-700 dark:text-gray-300">
+                    {t.email}
+                  </label>
+                  <Input
+                    id="email"
+                    type="email"
+                    name="email"
+                    required
+                    placeholder={t.emailPlaceholder}
+                  />
+                  <ValidationError prefix="Email" field="email" errors={state.errors} />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm mb-2 text-gray-700 dark:text-gray-300">
+                    {t.message}
+                  </label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder={t.messagePlaceholder}
+                    rows={6}
+                  />
+                  <ValidationError prefix="Message" field="message" errors={state.errors} />
+                </div>
+                <Button type="submit" size="lg" className="w-full" disabled={state.submitting}>
+                  {t.submit}
+                </Button>
+              </form>
+            )}
           </div>
         </div>
       </div>
