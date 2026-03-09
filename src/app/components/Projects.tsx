@@ -7,8 +7,9 @@ import { useLanguage } from "./LanguageContext";
 // local project images
 import comparaImg from "../img/compara.png";
 import adopsjonImg from "../img/adopsjon.png";
-import turningTide from "../img/turningtide.png";
+import AIquiz from "../img/AIquiz.png";
 import employeeDir from "../img/employee.png";
+import turningTide from "../img/turningtide.png";
 
 export function Projects() {
   const { language } = useLanguage();
@@ -33,14 +34,19 @@ export function Projects() {
           course: "IDG2671: Web Project",
         },
         {
-          title: "Turning the Tide",
-          description: "Advanced CSS project featuring scroll-based storytelling techniques. An interactive narrative experience that responds to user scrolling with animations and visual effects.",
-          course: "IDG1292: Advanced CSS",
+          title: "AI literacy quiz",
+          description: "In this project we developed a full-stack application where you either have the role of a guest, researcher or administrator. This application was built with the MERN stack. The application gives you the opportunity to either take quizzes as a guest, create quizzes as a researcher, or control the entire application as an admin. The purpose of the “AI literacy quiz” is to use a quiz to map how well you can distinguish between AI-generated content and content created by humans.",
+          course: " IDG2100 Full-stack web development",
         },
         {
           title: "Employee Directory",
           description: "Back-end development project creating an employee directory system featuring characters from The Office. Includes CRUD operations, database management, and API endpoints.",
           course: "IDG2003: Back-end Development",
+        },
+        {
+          title: "Scrolly telling",
+          description: "Scolly telling project based on the FN sustainability goal number 14: Life Below water. The prosject is built with HTML, CSS and JavaScript, and features scroll animations to create an engaging storytelling experience about the importance of preserving marine life.",
+          course: "IDG1292: Advanced CSS",
         },
       ],
     },
@@ -63,14 +69,19 @@ export function Projects() {
           course: "IDG2671: Web prosjekt",
         },
         {
-          title: "Turning the Tide",
-          description: "Avansert CSS-prosjekt med scroll-baserte fortellingteknikker. En interaktiv narrativ opplevelse som reagerer på brukerens scrolling med animasjoner og visuelle effekter.",
-          course: "IDG1292: Advanced CSS",
+          title: "AI literacy quiz",
+          description: "I dette prosjektet utviklet vi en full-stack applikasjon hvor du enten har rolle som gjest, researcher eller administrator. Denne applikasjonen ble bygget med MERN stack. Applikasjonen gir deg mulighet til enten ta quiz som gjest, lage quizer som researcher, eller kontrollere hele applikasjonen som admin. Hensikten med “AI literacy quiz” er å gjennom en quiz kartlegge hvor godt man klarer å skille mellom KI-generert innhold og innhold laget av mennesker.",
+          course: " IDG2100 Full-stack webutvikling",
         },
         {
           title: "Employee Directory",
           description: "Back-end utviklingsprosjekt som lager et ansatt-katalog-system med karakterer fra The Office. Inkluderer CRUD-operasjoner, databasehåndtering og API-endepunkter.",
           course: "IDG2003: Back-end development",
+        },
+        {
+          title: "Scrolly telling",
+          description: "Scrollytelling-prosjekt basert på FNs bærekraftsmål nummer 14: Liv under vann. Prosjektet er bygget med HTML, CSS og JavaScript, og har scroll-animasjoner for å skape en engasjerende historiefortelling om viktigheten av å bevare livet i havet.",
+          course: "IDG1292: Advanced CSS",
         },
       ],
     },
@@ -94,11 +105,11 @@ export function Projects() {
       demo: null,
     },
     {
-      image: turningTide,
-      technologies: ["HTML", "CSS", "JavaScript", "Scroll Animations"],
-      year: "2024",
-      github: "https://github.com/AdvancedCSS2024/idg1292-2024-oblig3-group14",
-      demo: "https://advancedcss2024.github.io/idg1292-2024-oblig3-group14/",
+      image: AIquiz,
+      technologies: ["React", "HTML", "CSS", "JavaScript", "SCSS"],
+      year: "2025",
+      github: " https://github.com/idg2100-2025/idg2100-group-exam-ismavi",
+      demo: null,
     },
     {
       image: employeeDir,
@@ -106,6 +117,13 @@ export function Projects() {
       year: "2024",
       github: null,
       demo: null,
+    },
+    {
+      image: turningTide,
+      technologies: ["HTML", "CSS", "JavaScript", "Scroll Animations"],
+      year: "2024",
+      github: "https://github.com/AdvancedCSS2024/idg1292-2024-oblig3-group14",
+      demo: "https://advancedcss2024.github.io/idg1292-2024-oblig3-group14/",
     },
   ];
 
