@@ -1,0 +1,20 @@
+# Node dependencies
+node_modules/
+
+# Vite build output
+dist/
+
+# GitHub Pages build artifacts (if you copy there)
+docs/
+
+# VS Code settings
+.vscode/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
