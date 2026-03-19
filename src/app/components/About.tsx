@@ -28,7 +28,7 @@ export function About() {
     },
     no: {
       title: "Om Meg",
-      paragraph1: "Jeg er snart nyutdannet med en bachelorgrad i webutvikling, med tre år dedikert læring og praktisk prosjekterfaring. Gjennom studiene har jeg utviklet et solid fundament innen både frontend- og backend-teknologier.",
+      paragraph1: "Jeg er snart nyutdannet med en bachelorgrad i webutvikling, med tre år med læring og praktisk prosjekterfaring. Gjennom studiene har jeg utviklet et solid fundament innen både frontend- og backend-teknologier.",
       paragraph2: "Min reise innen webutvikling har vært drevet av nysgjerrighet og en genuin kjærlighet for å skape ting som gjør en forskjell. Fra å bygge responsive grensesnitt til å arkitektere full-stack applikasjoner, har jeg utforsket ulike aspekter av moderne webutvikling.",
       paragraph3: "Jeg ser nå etter å bringe mine ferdigheter, entusiasme og friske perspektiv til et dynamisk team hvor jeg kan fortsette å vokse og bidra til meningsfulle prosjekter.",
       highlights: [
@@ -52,7 +52,7 @@ export function About() {
   const icons = [Code2, Palette, Lightbulb];
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl sm:text-5xl text-center mb-4 text-gray-900 dark:text-white">
           {t.title}

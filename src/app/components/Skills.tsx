@@ -31,7 +31,7 @@ export function Skills() {
   const t = translations[language];
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl sm:text-5xl text-center mb-4 text-gray-900 dark:text-white">
           {t.title}
@@ -50,7 +50,11 @@ export function Skills() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {item.skills.map((skill) => (
-                    <Badge key={skill} variant="outline" className="text-sm px-3 py-1">
+                    <Badge
+                      key={skill}
+                      variant="secondary"
+                      className="text-sm px-3 py-1 bg-gray-100 text-gray-800 dark:bg-blue-900 dark:text-white border-none shadow-sm"
+                    >
                       {skill}
                     </Badge>
                   ))}

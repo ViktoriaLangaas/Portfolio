@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
@@ -8,20 +9,32 @@ import { ThemeProvider } from "./components/ThemeProvider";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { LanguageProvider } from "./components/LanguageContext";
 import { LanguageToggle } from "./components/LanguageToggle";
+import ProjectDetail from "./components/ProjectDetail";
 
 export default function App() {
+  const homePage = (
+    <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors">
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
+    </div>
+  );
+
   return (
     <LanguageProvider>
       <ThemeProvider>
-        <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors">
-          <LanguageToggle />
-          <ThemeToggle />
-          <Hero />
-          <About />
-          <Projects />
-          <Skills />
-          <Contact />
-          <Footer />
+        <LanguageToggle />
+        <ThemeToggle />
+        <div className="bg-slate-50 dark:bg-gray-950">
+          <Router>
+            <Routes>
+              <Route path="/" element={homePage} />
+              <Route path="/project/:projectId" element={<ProjectDetail />} />
+            </Routes>
+          </Router>
         </div>
       </ThemeProvider>
     </LanguageProvider>

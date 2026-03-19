@@ -40,10 +40,10 @@ export function Hero() {
           <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl">
             VBL
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="relative z-10 text-3xl sm:text-5xl lg:text-6xl mb-6 leading-snug bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Viktoria Brodshaug Langaas
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-6">
+          <p className="relative z-20 text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8">
             {t.role}
           </p>
           <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
