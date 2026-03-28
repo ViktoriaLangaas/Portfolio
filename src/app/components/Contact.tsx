@@ -16,16 +16,16 @@ export function Contact() {
   const translations = {
     en: {
       title: "Get In Touch",
-      subtitle: "I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
+      subtitle: "I'm currently looking for new opportunities. Feel free to reach out!",
       contactInfo: "Contact Information",
-      sendMessage: "Send a Message",
+      sendMessage: "Send a message",
       name: "Name",
       namePlaceholder: "Your name",
       email: "Email",
       emailPlaceholder: "your.email@example.com",
       message: "Message",
       messagePlaceholder: "Your message...",
-      submit: "Send Message",
+      submit: "Send message",
       successMessage: "Thank you for your message! 💙",
       labels: {
         email: "Email",
@@ -34,22 +34,22 @@ export function Contact() {
       },
     },
     no: {
-      title: "Ta Kontakt",
-      subtitle: "Jeg ser for tiden etter nye muligheter. Enten du har et spørsmål eller bare vil si hei, ta gjerne kontakt!",
+      title: "Ta kontakt",
+      subtitle: "Jeg ser for tiden etter nye muligheter. Ta gjerne kontakt!",
       contactInfo: "Kontaktinformasjon",
-      sendMessage: "Send en Melding",
+      sendMessage: "Send en melding",
       name: "Navn",
       namePlaceholder: "Ditt navn",
       email: "E-post",
       emailPlaceholder: "din.epost@eksempel.no",
       message: "Melding",
       messagePlaceholder: "Din melding...",
-      submit: "Send Melding",
+      submit: "Send melding",
       successMessage: "Takk for meldingen! 💙",
       labels: {
         email: "E-post",
         phone: "Telefon",
-        location: "Lokasjon",
+        location: "Adresse",
       },
     },
   };
@@ -132,14 +132,6 @@ export function Contact() {
                 className="bg-gray-900 dark:bg-gray-700 text-white p-3 rounded-full hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors cursor-pointer"
               >
                 <Github className="size-6" />
-              </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors cursor-pointer"
-              >
-                <Linkedin className="size-6" />
               </a>
             </div>
           </div>

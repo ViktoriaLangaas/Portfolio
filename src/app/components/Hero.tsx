@@ -13,15 +13,15 @@ export function Hero() {
   const translations = {
     en: {
       role: "Web Developer",
-      description: "Passionate about building beautiful, functional, and user-centric digital experiences. Recent graduate with 3 years of hands-on experience in modern web development.",
+      description: "Passionate about building functional and user-centric digital experiences. Soon-to-be graduate with 3 years of experience in modern web development.",
       viewWork: "View My Work",
       getInTouch: "Get In Touch",
     },
     no: {
       role: "Webutvikler",
-      description: "Lidenskapelig opptatt av å bygge vakre, funksjonelle og brukersentrerte digitale opplevelser. Nyutdannet med 3 års praktisk erfaring innen moderne webutvikling.",
-      viewWork: "Se Mine Prosjekter",
-      getInTouch: "Kontakt Meg",
+      description: "Opptatt av å bygge gode, funksjonelle og brukersentrerte digitale opplevelser. Snart nyutdannet med 3 års erfaring innen moderne webutvikling.",
+      viewWork: "Mine prosjekter",
+      getInTouch: "Kontakt meg",
     },
   };
 
@@ -37,7 +37,7 @@ export function Hero() {
     <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-blue-950 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl w-full text-center">
         <div className="mb-8">
-          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl">
+          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-800 to-purple-600 flex items-center text-white justify-center dark:text-black text-4xl italic font-bold">
             VBL
           </div>
           <h1 className="relative z-10 text-3xl sm:text-5xl lg:text-6xl mb-6 leading-snug bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -69,7 +69,7 @@ export function Hero() {
           </Button>
         </div>
 
-        <div className="flex gap-6 justify-center text-gray-600 dark:text-gray-400">
+        <div className="flex gap-12 justify-center text-gray-600 dark:text-gray-400">
           <a
             href="https://github.com/ViktoriaLangaas"
             target="_blank"
@@ -78,14 +78,7 @@ export function Hero() {
           >
             <Github className="size-6" />
           </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
-          >
-            <Linkedin className="size-6" />
-          </a>
+          
           <a
             href="mailto:viktorbl@stud.ntnu.no"
             className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
@@ -99,7 +92,7 @@ export function Hero() {
         onClick={() => scrollToSection("about")}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-400 dark:text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors animate-bounce cursor-pointer"
       >
-        <ArrowDown className="size-8" />
+        <ArrowDown className="size-11" />
       </button>
     </section>
   );

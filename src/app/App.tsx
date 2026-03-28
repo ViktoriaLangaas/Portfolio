@@ -10,6 +10,7 @@ import { ThemeToggle } from "./components/ThemeToggle";
 import { LanguageProvider } from "./components/LanguageContext";
 import { LanguageToggle } from "./components/LanguageToggle";
 import ProjectDetail from "./components/ProjectDetail";
+import ConnectFourAI from "./components/ConnectFour";
 
 export default function App() {
   const homePage = (
@@ -32,6 +33,7 @@ export default function App() {
           <Router>
             <Routes>
               <Route path="/" element={homePage} />
+              <Route path="/connect-four" element={<ConnectFourAI />} />
               <Route path="/project/:projectId" element={<ProjectDetail />} />
             </Routes>
           </Router>

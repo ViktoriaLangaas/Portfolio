@@ -11,18 +11,18 @@ export function Projects() {
 
   const translations = {
     en: {
-      title: "My Projects",
+      title: "My projects",
       subtitle: "A selection of projects I've built during my bachelor's degree, showcasing my growth and technical abilities over the past three years.",
       code: "Code",
-      liveDemo: "Live Demo",
+      liveDemo: "Live demo",
       comingSoon: "Links coming soon",
       details: "View project details",
     },
     no: {
-      title: "Mine Prosjekter",
+      title: "Mine prosjekter",
       subtitle: "Et utvalg prosjekter jeg har bygget under bachelorgraden, som viser min vekst og tekniske ferdigheter de siste tre årene.",
       code: "Kode",
-      liveDemo: "Live Demo",
+      liveDemo: "Live demo",
       comingSoon: "Lenker kommer snart",
       details: "Se prosjektet",
     },
@@ -79,11 +79,11 @@ export function Projects() {
                     </div>
                   </CardContent>
                   <CardFooter className="gap-3">
-                    <Button variant="outline" size="sm" className="gap-2">
+                    <Button variant="outline" size="sm" className="gap-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700">
                       {t.details}
                     </Button>
                     {project.github && (
-                      <Button variant="outline" size="sm" className="gap-2 cursor-pointer" asChild>
+                      <Button variant="outline" size="sm" className="gap-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700" asChild>
                         <a href={project.github} target="_blank" rel="noopener noreferrer">
                           <Github className="size-4" />
                           {t.code}
@@ -106,6 +106,23 @@ export function Projects() {
               </Link>
             );
           })}
+        </div>
+        {/* Connect Four Promo Section */}
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+            Bored? Want to try a game?
+          </h3>
+
+          <p className="text-gray-600 dark:text-gray-300 mb-6">
+            Try to win Connect Four agianst my unbeatable AI :)
+          </p>
+
+          <Link
+            to="/connect-four"
+            className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
+          >
+            Play Connect Four
+          </Link>
         </div>
       </div>
     </section>

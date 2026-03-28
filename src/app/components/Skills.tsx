@@ -53,7 +53,7 @@ export function Skills() {
                     <Badge
                       key={skill}
                       variant="secondary"
-                      className="text-sm px-3 py-1 bg-gray-100 text-gray-800 dark:bg-blue-900 dark:text-white border-none shadow-sm"
+                      className="text-sm px-3 py-1 bg-gray-100 text-gray-800 dark:bg-blue-950 dark:text-white dark:border-black border-gray shadow-sm"
                     >
                       {skill}
                     </Badge>
