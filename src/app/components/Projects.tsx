@@ -34,7 +34,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-950">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto w-full overflow-visible">
         <h2 className="text-4xl sm:text-5xl text-center mb-4 text-gray-900 dark:text-white">
           {t.title}
         </h2>
@@ -43,16 +43,27 @@ export function Projects() {
           {t.subtitle}
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 w-full max-w-full">
           {projectData.map((project) => {
             const localized = project.languages[language];
             return (
               <Link
                 key={project.id}
                 to={`/project/${project.id}`}
-                className="block transform transition-transform hover:-translate-y-1"
+                className="block w-full transform transition-transform hover:-translate-y-1"
               >
-                <Card className="overflow-hidden hover:shadow-xl transition-shadow dark:bg-gray-900 dark:border-gray-800 cursor-pointer">
+                <Card
+                    className="
+                      w-full 
+                      max-w-full
+                      min-w-0
+                      hover:shadow-xl 
+                      transition-shadow 
+                      dark:bg-gray-900 
+                      dark:border-gray-800 
+                      cursor-pointer
+                    "
+                  >
                   <img
                     src={project.image}
                     alt={localized.title}
@@ -78,7 +89,7 @@ export function Projects() {
                       )}
                     </div>
                   </CardContent>
-                  <CardFooter className="gap-3">
+                  <CardFooter className="flex flex-wrap gap-3">
                     <Button variant="outline" size="sm" className="gap-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700">
                       {t.details}
                     </Button>
