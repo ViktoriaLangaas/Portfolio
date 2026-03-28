@@ -107,14 +107,14 @@ export function Projects() {
             );
           })}
         </div>
-        {/* Connect Four Promo Section */}
+
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
             Bored? Want to try a game?
           </h3>
 
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Try to win Connect Four agianst my unbeatable AI :)
+            Try to win Connect Four agianst my unbeatable AI
           </p>
 
           <Link
