@@ -5,7 +5,7 @@ node_modules/
 dist/
 
 # GitHub Pages build artifacts (if you copy there)
-docs/
+# docs/
 
 # VS Code settings
 .vscode/
