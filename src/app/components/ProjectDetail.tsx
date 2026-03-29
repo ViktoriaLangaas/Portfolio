@@ -15,7 +15,7 @@ export default function ProjectDetail() {
       <main className="min-h-screen p-8 bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Project not found</h2>
-          <p className="mb-4">Sorry, we couldn’t locate that project.</p>
+          <p className="mb-4">Sorry, we could not locate that project.</p>
           <Link to="/" className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-300 hover:underline">
             <ArrowLeft size={16} /> Back to Portfolio
           </Link>
