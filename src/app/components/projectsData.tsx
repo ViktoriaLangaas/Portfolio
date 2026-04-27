@@ -39,7 +39,7 @@ export const projects: ProjectData[] = [
     id: "adopsjonsplattform",
     image: adopsjonImg,
     year: "2026",
-    github: null,
+    github: "https://github.com/git-kaia/pet-matchmaking",
     demo: null,
     technologies: ["React", "Node.js", "PostgreSQL", "TypeScript"],
     timeFrame: "Jan 2026 - Jun 2026",

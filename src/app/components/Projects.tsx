@@ -67,7 +67,7 @@ export function Projects() {
                   <img
                     src={project.image}
                     alt={localized.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full aspect-[16/9] object-contain bg-gray-1g00 dark:bg-gray-800 rounded-t-lg"
                   />
                   <CardHeader>
                     <div className="flex justify-between items-start mb-2">
