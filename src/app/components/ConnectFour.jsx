@@ -210,7 +210,7 @@ export default function ConnectFourAI() {
     <h2 className="text-2xl font-bold">Connect Four vs AI</h2>
 
     {winner ? (
-      <h3 className="text-xl mt-2">{winner} wins! Congrats ! 🎉</h3>
+      <h3 className="text-xl mt-2">{winner} wins! Congrats! 🎉</h3>
     ) : (
       <h3 className="text-xl mt-2">Turn: {turn}</h3>
     )}
