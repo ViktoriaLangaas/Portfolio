@@ -2,6 +2,8 @@ import { Code2, Palette, Lightbulb } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { useLanguage } from "./LanguageContext";
 
+import meg3 from "../img/meg3.png";
+
 export function About() {
   const { language } = useLanguage();
 
@@ -62,7 +64,7 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-6 items-center mb-16 opacity-90 dark:opacity-70">
           <div>
             <img 
-              src="/src/app/img/meg3.png"
+              src={meg3}
               alt="Me"
               className="rounded-lg shadow-xl w-full object-cover aspect-video"
             />

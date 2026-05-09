@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   base: '/',
+  build: {
+    outDir: 'docs'
+  },
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
