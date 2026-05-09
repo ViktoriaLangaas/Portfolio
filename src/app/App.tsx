@@ -11,6 +11,7 @@ import { LanguageProvider } from "./components/LanguageContext";
 import { LanguageToggle } from "./components/LanguageToggle";
 import ProjectDetail from "./components/ProjectDetail";
 import ConnectFourAI from "./components/ConnectFour";
+import ScrollToTop  from "./components/ui/scroll-to-top";
 
 export default function App() {
   const homePage = (
@@ -31,6 +32,7 @@ export default function App() {
         <ThemeToggle />
         <div className="bg-slate-50 dark:bg-gray-950">
           <Router>
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={homePage} />
               <Route path="/connect-four" element={<ConnectFourAI />} />

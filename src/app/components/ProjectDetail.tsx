@@ -46,7 +46,7 @@ export default function ProjectDetail() {
               alt={localized.title}
               className="absolute inset-0 object-cover w-full h-full"
             />
-            <div className="absolute inset-0 bg-white/70 dark:bg-black/40" />
+            <div className="absolute inset-0 bg-white/20 dark:bg-black/40" />
           </div>
 
           <div className="p-6 sm:p-8">

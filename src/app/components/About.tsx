@@ -59,11 +59,11 @@ export function About() {
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-12"></div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid md:grid-cols-2 gap-6 items-center mb-16 opacity-90 dark:opacity-70">
           <div>
             <img 
-              src="/src/app/img/me.png"
-              alt="Workspace"
+              src="/src/app/img/meg3.png"
+              alt="Me"
               className="rounded-lg shadow-xl w-full object-cover aspect-video"
             />
           </div>
