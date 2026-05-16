@@ -1,8 +1,17 @@
 import comparaImg from "../img/compara.png";
-import adopsjonImg from "../img/adopsjon.png";
 import AIquiz from "../img/AIquiz.png";
 import employeeDir from "../img/employee.png";
 import turningTide from "../img/turningtide.png";
+
+import adopsjonImg from "../img/adopsjon.png";
+import adopsjon1 from "../img/adopsjon1.png";
+import adopsjon2 from "../img/adopsjon2.png";
+import adopsjon3 from "../img/adopsjon3.png";
+import adopsjon4 from "../img/adopsjon4.png";
+import adopsjon5 from "../img/adopsjon5.png";
+import adopsjon6 from "../img/adopsjon6.png";
+import adopsjon7 from "../img/adopsjon7.png";
+
 
 export type ProjectData = {
   id: string;
@@ -37,7 +46,7 @@ export type ProjectData = {
 export const projects: ProjectData[] = [
   {
     id: "adopsjonsplattform",
-    image: adopsjonImg,
+    image: adopsjon1,
     year: "2026",
     github: "https://github.com/git-kaia/pet-matchmaking",
     demo: null,
@@ -51,9 +60,9 @@ export const projects: ProjectData[] = [
     ],
     languages: {
       en: {
-        title: "Adopsjonsplattform",
+        title: "Match with Purpose",
         shortDescription:
-          "Bachelor thesis: A comprehensive adoption platform connecting families and pets in need of homes.",
+          "Bachelor thesis: An application to fint the most suitable home based on the animal's needs.",
         longDescription:
           "This full-stack application is built to manage adoption profiles, track interactions and handle secure communication. The goal is to provide a modern and reliable solution for animal welfare organizations and prospective adopters.",
         course: "IDG3920: Bachelor Thesis",
@@ -62,9 +71,9 @@ export const projects: ProjectData[] = [
           "Built with a scalable architecture, emphasis on maintainability and clean code. Includes API design, database relations, and a multi-step onboarding experience.",
       },
       no: {
-        title: "Adopsjonsplattform",
+        title: "Match med mening",
         shortDescription:
-          "Bacheloroppgave: En omfattende adopsjonsplattform som kobler familier med dyr som trenger hjem.",
+          "Bacheloroppgave: En applikasjon for å finne det mest egnede hjemmet basert på dyrets behov.",
         longDescription:
           "Denne full-stack-applikasjonen er bygget for å håndtere dyreprofiler, spore interaksjoner og sikre kommunikasjon. Målet er å tilby en moderne og pålitelig løsning for dyrevernorganisasjoner og potensielle adoptanter.",
         course: "IDG3920: Bacheloroppgave",
@@ -73,7 +82,7 @@ export const projects: ProjectData[] = [
           "Fokus på vedlikeholdbarhet og ren kode. Inkluderer API-design, databaserelasjoner og én flerstegs onboardingsflyt.",
       },
     },
-    extraImages: [adopsjonImg, adopsjonImg, adopsjonImg],
+    extraImages: [adopsjon1, adopsjon2, adopsjon3, adopsjon4, adopsjon5, adopsjon6, adopsjon7],
   },
   {
     id: "compara",
@@ -82,7 +91,7 @@ export const projects: ProjectData[] = [
     github: "https://github.com/isakeghv/comparative_tool_prototype",
     demo: null,
     technologies: ["JavaScript", "HTML", "CSS", "UI/UX"],
-    timeFrame: "Sep 2024 - Jan 2025",
+    timeFrame: "Jan 2025 - Jun 2025",
     features: [
       "Interactive comparison sliders",
       "Dynamic data visualization charts",
@@ -158,7 +167,7 @@ export const projects: ProjectData[] = [
     github: null,
     demo: null,
     technologies: ["Node.js", "Express", "MongoDB", "REST API"],
-    timeFrame: "Aug 2024 - Dec 2024",
+    timeFrame: "Okt 2024 - Nov 2024",
     features: [
       "CRUD for employee profiles",
       "Search and filter with pagination",
@@ -196,7 +205,7 @@ export const projects: ProjectData[] = [
     github: "https://github.com/AdvancedCSS2024/idg1292-2024-oblig3-group14",
     demo: "https://advancedcss2024.github.io/idg1292-2024-oblig3-group14/",
     technologies: ["HTML", "CSS", "JavaScript", "Scroll Animations"],
-    timeFrame: "May 2024 - Aug 2024",
+    timeFrame: "Apr 2024 - Mai 2024",
     features: [
       "Animated scrollytelling for sustainability theme",
       "Responsive text and visual narrative sections",
