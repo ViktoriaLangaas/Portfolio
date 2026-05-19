@@ -24,7 +24,7 @@ export function About() {
         },
         {
           title: "Working smart with AI",
-          description: "With the rise of artificial intelligence, it's all about using AI tools smart and effective.",
+          description: "With the rise of artificial intelligence, it's all about using AI tools smart, effective, and secure.",
         },
       ],
     },
@@ -44,7 +44,7 @@ export function About() {
         },
         {
           title: "Jobb smart med KI",
-          description: "Bruk av kunstig intelligens er fremtiden, og det handler om å bruke KI-verktøy smart og effektivt.",
+          description: "Bruk av kunstig intelligens er fremtiden, og det handler om å bruke KI-verktøy smart, effektivt og sikkert.",
         },
       ],
     },
