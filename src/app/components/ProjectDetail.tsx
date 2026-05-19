@@ -44,7 +44,7 @@ export default function ProjectDetail() {
             <img
               src={project.image}
               alt={localized.title}
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 object-cover w-full h-full opacity-90 dark:opacity-70"
             />
             <div className="absolute inset-0 bg-white/20 dark:bg-black/40" />
           </div>
@@ -94,7 +94,7 @@ export default function ProjectDetail() {
                         key={`${img}-${idx}`}
                         src={img}
                         alt={`${localized.title} image ${idx + 1}`}
-                        className="rounded-xl h-44 w-full object-cover border border-gray-200 dark:border-gray-800 shadow-sm"
+                        className="rounded-xl p-2 h-40 w-full object-scale-down border border-gray-200 dark:border-gray-800 shadow-sm opacity-90 dark:opacity-70"
                       />
                     ))
                   )}

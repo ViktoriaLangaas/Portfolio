@@ -44,7 +44,7 @@ export function About() {
         },
         {
           title: "Jobb smart med KI",
-          description: "Med utviklingen av kunstig intelligens, handler det om å bruke KI verktøy smart og effektivt.",
+          description: "Bruk av kunstig intelligens er fremtiden, og det handler om å bruke KI-verktøy smart og effektivt.",
         },
       ],
     },
