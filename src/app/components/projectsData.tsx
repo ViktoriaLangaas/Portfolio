@@ -1,7 +1,18 @@
 import comparaImg from "../img/compara.png";
-import AIquiz from "../img/AIquiz.png";
-import employeeDir from "../img/employee.png";
-import turningTide from "../img/turningtide.png";
+import compara1 from "../img/compara1.png";
+import compara2 from "../img/compara2.png";
+import compara3 from "../img/compara3.png";
+import compara4 from "../img/compara4.png";
+import compara5 from "../img/compara5.png";
+import compara6 from "../img/compara6.png";
+import compara7 from "../img/compara7.png";
+import compara8 from "../img/compara8.png";
+import compara9 from "../img/compara9.png";
+import compara10 from "../img/compara10.png";
+import compara11 from "../img/compara11.png";
+import compara12 from "../img/compara12.png";
+import compara13 from "../img/compara13.png";
+
 
 import adopsjonImg from "../img/adopsjon.png";
 import adopsjon1 from "../img/adopsjon1.png";
@@ -12,6 +23,35 @@ import adopsjon5 from "../img/adopsjon5.png";
 import adopsjon6 from "../img/adopsjon6.png";
 import adopsjon7 from "../img/adopsjon7.png";
 
+import turningTide from "../img/turningtide.png";
+import turningtide1 from "../img/turningtide1.png";
+import turningtide2 from "../img/turningtide2.png";
+import turningtide3 from "../img/turningtide3.png";
+import turningtide4 from "../img/turningtide4.png";
+import turningtide5 from "../img/turningtide5.png";
+
+import AIquiz from "../img/AIquiz.png";
+import AIquiz1 from "../img/AIquiz1.png";
+import AIquiz2 from "../img/AIquiz2.png";
+import AIquiz3 from "../img/AIquiz3.png";
+import AIquiz4 from "../img/AIquiz4.png";
+import AIquiz5 from "../img/AIquiz5.png";
+import AIquiz6 from "../img/AIquiz6.png";
+import AIquiz7 from "../img/AIquiz7.png";
+import AIquiz8 from "../img/AIquiz8.png";
+import AIquiz9 from "../img/AIquiz9.png";
+import AIquiz10 from "../img/AIquiz10.png";
+import AIquiz11 from "../img/AIquiz11.png";
+import AIquiz12 from "../img/AIquiz12.png";
+import AIquiz13 from "../img/AIquiz13.png";
+
+import employeeDir from "../img/employee.png";
+import employee1 from "../img/employee1.png";
+import employee2 from "../img/employee2.png";
+import employee3 from "../img/employee3.png";
+import employee4 from "../img/employee4.png";
+import employee5 from "../img/employee5.png";
+import employee6 from "../img/employee6.png";
 
 export type ProjectData = {
   id: string;
@@ -66,7 +106,6 @@ export const projects: ProjectData[] = [
         longDescription:
           "This full-stack application is built to manage adoption profiles, track interactions and handle secure communication. The goal is to provide a modern and reliable solution for animal welfare organizations and prospective adopters.",
         course: "IDG3920: Bachelor Thesis",
-        status: "Under Development",
         moreText:
           "Built with a scalable architecture, emphasis on maintainability and clean code. Includes API design, database relations, and a multi-step onboarding experience.",
       },
@@ -77,7 +116,6 @@ export const projects: ProjectData[] = [
         longDescription:
           "Denne full-stack-applikasjonen er bygget for å håndtere dyreprofiler, spore interaksjoner og sikre kommunikasjon. Målet er å tilby en moderne og pålitelig løsning for dyrevernorganisasjoner og potensielle adoptanter.",
         course: "IDG3920: Bacheloroppgave",
-        status: "Under utvikling",
         moreText:
           "Fokus på vedlikeholdbarhet og ren kode. Inkluderer API-design, databaserelasjoner og én flerstegs onboardingsflyt.",
       },
@@ -120,7 +158,7 @@ export const projects: ProjectData[] = [
           "Inneholder tilstandsbaserte interaksjoner, ytelsesoptimalisering og komponentbasert layout.",
       },
     },
-    extraImages: [comparaImg],
+    extraImages: [comparaImg, compara1, compara2, compara3, compara4, compara5, compara6, compara7, compara8, compara9, compara10, compara11, compara12, compara13],
   },
   {
     id: "ai-literacy-quiz",
@@ -158,7 +196,7 @@ export const projects: ProjectData[] = [
           "Inkluderer backend REST API, frontend tilstandshåndtering, og responsivt brukergrensesnitt.",
       },
     },
-    extraImages: [AIquiz],
+    extraImages: [AIquiz, AIquiz1, AIquiz2, AIquiz3, AIquiz4, AIquiz5, AIquiz6, AIquiz7, AIquiz8, AIquiz9, AIquiz10, AIquiz11, AIquiz12, AIquiz13],
   },
   {
     id: "employee-directory",
@@ -196,7 +234,7 @@ export const projects: ProjectData[] = [
           "Utvidet med tester, logging og modulær kode for vedlikehold.",
       },
     },
-    extraImages: [employeeDir],
+    extraImages: [employeeDir, employee1, employee2, employee3, employee4, employee5, employee6],
   },
   {
     id: "scrolly-telling",
@@ -234,7 +272,7 @@ export const projects: ProjectData[] = [
           "Inneholder interaktive seksjoner og animasjonsglidninger for desktop og mobil.",
       },
     },
-    extraImages: [turningTide],
+    extraImages: [turningTide, turningtide1, turningtide2, turningtide3, turningtide4, turningtide5],
   },
 ];
 

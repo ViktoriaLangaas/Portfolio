@@ -94,7 +94,7 @@ export default function ProjectDetail() {
                         key={`${img}-${idx}`}
                         src={img}
                         alt={`${localized.title} image ${idx + 1}`}
-                        className="rounded-xl h-60 w-full object-cover border border-gray-200 dark:border-gray-800 shadow-sm opacity-90 dark:opacity-70"
+                        className="rounded-xl p-2 h-40 w-full object-scale-down border border-gray-200 dark:border-gray-800 shadow-sm opacity-90 dark:opacity-70"
                       />
                     ))
                   )}
