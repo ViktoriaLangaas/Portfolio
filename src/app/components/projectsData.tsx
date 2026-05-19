@@ -112,7 +112,7 @@ export const projects: ProjectData[] = [
       no: {
         title: "Match med mening",
         shortDescription:
-          "Bacheloroppgave: En applikasjon for å finne det mest egnede hjemmet basert på dyrets behov.",
+          "Bacheloroppgave: Utvikling av en webbasert applikasjon for matchmaking.",
         longDescription:
           "Denne full-stack-applikasjonen er bygget for å håndtere dyreprofiler, spore interaksjoner og sikre kommunikasjon. Målet er å tilby en moderne og pålitelig løsning for dyrevernorganisasjoner og potensielle adoptanter.",
         course: "IDG3920: Bacheloroppgave",
